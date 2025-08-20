@@ -174,7 +174,7 @@ graph TD
 
 
 *   **Frontend :** Application Web Progressive (PWA) avec **React.js** et  *Next.js** pour une expérience mobile native-like, offline-first.
-*   **Backend :** API RESTful construite avec **Node.js (Express)**  pour la robustesse et la scalabilité.
+*   **Backend :** API RESTful construite avec **Node.js & Superbase**  pour la robustesse et la scalabilité.
 *   **Base de Données :** **SuperBase (PostgreSQL)** pour la gestion des relations complexes (commandes, stocks, users) et la fiabilité.
 *   **Communication Temps Réel :** **Socket.IO** ou **WebSockets** pour les notifications (nouvelles commandes, appels serveur, statuts).
 *   **Paiement :** Intégration de **Stripe** ou équivalent (PCI DSS compliant).

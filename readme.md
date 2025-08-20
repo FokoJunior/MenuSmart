@@ -167,7 +167,7 @@ graph TD
 
     subgraph Technologies
     D[React.js + Next.js]
-    E[Node.js Express]
+    E[Node.js | Superbase]
     end
 
 ```

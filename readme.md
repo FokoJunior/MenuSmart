@@ -207,21 +207,21 @@ graph TD
 
 ### **8. Évolutions Futures (Roadmap)** 
 
-*   **Q2 2024 :** 
+*   **Q2 2026 :** 
     * Applications natives
     * Intégration des assistants vocaux
-*   **Q3 2024 :**
+*   **Q3 2026 :**
     * Système de réservation avancé avec IA
     * Module de gestion des événements
-*   **Q4 2024 :**
+*   **Q4 2026 :**
     * Marketplace pour restaurants
     * Système de notation interne
-*   **Q1 2025 :**
+*   **Q1 2027 :**
     * Module de livraison robotisée
     * Intégration VR/AR avancée
 *   **Q2 2025 :**
     * Système prédictif de maintenance
     * Intelligence artificielle pour la gestion des stocks
-*   **Q3 2025 :**
+*   **Q3 2027 :**
     * API publique et marketplace de plugins
     * Système de franchises automatisé

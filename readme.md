@@ -150,6 +150,7 @@ Le projet « SmartMenu » a pour objectif de révolutionner l'expérience client
 ### **5. Architecture Technique et Spécifications** 
 
 ```mermaid
+
 graph TD
     A[Client - Smartphone] -->|Scanne| B(QR Code - Table 05)
     B --> C(Serveur Web)
@@ -168,7 +169,9 @@ graph TD
     D[React.js + Next.js]
     E[Node.js Express]
     end
+
 ```
+
 
 *   **Frontend :** Application Web Progressive (PWA) avec **React.js** et  *Next.js** pour une expérience mobile native-like, offline-first.
 *   **Backend :** API RESTful construite avec **Node.js (Express)**  pour la robustesse et la scalabilité.

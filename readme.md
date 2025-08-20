@@ -149,6 +149,7 @@ Le projet « SmartMenu » a pour objectif de révolutionner l'expérience client
 
 ### **5. Architecture Technique et Spécifications** 
 
+```planuml
 @startuml
 skinparam defaultFontName Arial
 skinparam rectangleFontSize 12
@@ -179,6 +180,7 @@ H --> I : Notifications
 H --> J : Notifications
 
 @enduml
+```
 
 *   **Frontend :** Application Web Progressive (PWA) avec **React.js** et  *Next.js** pour une expérience mobile native-like, offline-first.
 *   **Backend :** API RESTful construite avec **Node.js (Express)**  pour la robustesse et la scalabilité.

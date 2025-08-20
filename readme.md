@@ -149,21 +149,36 @@ Le projet « SmartMenu » a pour objectif de révolutionner l'expérience client
 
 ### **5. Architecture Technique et Spécifications** 
 
-```mermaid
-graph TD
-    A[Client - Smartphone] -->|Scanne| B(QR Code - Table 05)
-    B --> C(Serveur Web Nginx/Apache)
-    C --> D[Application Frontend<br/>React.js/Vue.js PWA]
-    C --> E[API RESTful<br/>Node.js/Laravel]
-    E --> F[(Base de Données<br/>PostgreSQL)]
-    E --> G[Service de Paiement<br/>(Stripe API)]
-    E --> H[Service de Notifications Push<br/>(Socket.io)]
-    I[Personnel - Tablet/PC] --> E
-    J[Écran Cuisine] --> E
-    H --> A
-    H --> I
-    H --> J
-```
+@startuml
+skinparam defaultFontName Arial
+skinparam rectangleFontSize 12
+title Diagramme d'Architecture Système de Commande de Restaurant
+
+rectangle "Client - Smartphone" as A
+rectangle "QR Code - Table 05" as B
+rectangle "Serveur Web\nNginx/Apache" as C
+rectangle "Application Frontend\nReact.js/Vue.js PWA" as D
+rectangle "API RESTful\nNode.js/Laravel" as E
+database "Base de Données\nPostgreSQL" as F
+rectangle "Service de Paiement\n(Stripe API)" as G
+rectangle "Service de Notifications Push\n(Socket.io)" as H
+rectangle "Personnel - Tablet/PC" as I
+rectangle "Écran Cuisine" as J
+
+A --> B : Scanne
+B --> C
+C --> D
+C --> E
+E --> F
+E --> G
+E --> H
+I --> E
+J --> E
+H --> A : Notifications
+H --> I : Notifications
+H --> J : Notifications
+
+@enduml
 
 *   **Frontend :** Application Web Progressive (PWA) avec **React.js** et  *Next.js** pour une expérience mobile native-like, offline-first.
 *   **Backend :** API RESTful construite avec **Node.js (Express)**  pour la robustesse et la scalabilité.

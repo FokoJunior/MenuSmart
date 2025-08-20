@@ -152,17 +152,22 @@ Le projet « SmartMenu » a pour objectif de révolutionner l'expérience client
 ```mermaid
 graph TD
     A[Client - Smartphone] -->|Scanne| B(QR Code - Table 05)
-    B --> C(Serveur Web Nginx/Apache)
-    C --> D[Application Frontend<br/>React.js/Vue.js PWA]
-    C --> E[API RESTful<br/>Node.js/Laravel]
-    E --> F[(Base de Données<br/>PostgreSQL)]
-    E --> G[Service de Paiement<br/>(Stripe API)]
-    E --> H[Service de Notifications Push<br/>(Socket.io)]
-    I[Personnel - Tablet/PC] --> E
+    B --> C(Serveur Web)
+    C --> D[Frontend PWA]
+    C --> E[API RESTful]
+    E --> F[(PostgreSQL)]
+    E --> G[Stripe API]
+    E --> H[Socket.io]
+    I[Tablettes Personnel] --> E
     J[Écran Cuisine] --> E
     H --> A
     H --> I
     H --> J
+
+    subgraph Technologies
+    D[React.js + Next.js]
+    E[Node.js Express]
+    end
 ```
 
 *   **Frontend :** Application Web Progressive (PWA) avec **React.js** et  *Next.js** pour une expérience mobile native-like, offline-first.
